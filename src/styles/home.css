@@ -64,6 +64,7 @@
   margin-top: 3px;
   font-size: 15px;
   color: #353839;
+  padding: 0px 20px;
 }
 
 .intro-image-sec {
@@ -81,6 +82,12 @@
   width: 17%;
   height: 90%;
   margin: 0px 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.intro-image-sec > img:hover {
+  opacity: 0.9;
+  border: 0.5px solid grey;
 }
 
 .intro-image-cont {
