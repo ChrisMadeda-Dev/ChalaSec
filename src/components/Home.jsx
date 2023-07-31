@@ -38,8 +38,7 @@ const IntroInfo = () => {
       <div className="ii-text-cont">
         <h2>OUR MISSION</h2>
         <p>
-          To anable students realize their potential through <br />{" "}
-          identification & development of individuals talents
+          To anable students realize their potential through identification & development of individuals talents
         </p>
       </div>
     </div>

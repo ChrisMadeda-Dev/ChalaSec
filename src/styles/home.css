@@ -167,6 +167,10 @@
     display: none;
   }
 
+  .welcome-sec{
+    height: 60vh;
+  }
+
   .intro-info {
     flex-direction: column;
     height: 50vh;
@@ -188,6 +192,8 @@
   .ii-text-cont > p {
     padding: 0px 20px;
     text-align: center;
+    font-size: 16px;
+    color: #303030;
   }
 
   .intro-image-sec {
@@ -196,10 +202,11 @@
   }
 
   .intro-image-sec>img{
-    width: 93%;
-    height: 30%;
+    width: 90%;
+    height: 32%;
     flex: 0 0 5%;
     margin: 5px 0px;
+    border-radius: 10px;
   }
 
   .home-about-us {
@@ -209,17 +216,19 @@
   }
 
   .home-about-us-text{
-    flex: 0 0 65%;
+    flex: 0 0 60%;
     background-color: '';
   }
 
   .home-about-us-text > h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .home-about-us-text > p {
     width: 90%;
     text-align: justify;
+    font-size: 15px;
+    padding: 0px 10px;
   }
 
   .home-our-detail {
