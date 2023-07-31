@@ -113,7 +113,7 @@
 }
 
 .home-about-us-text > p {
-  text-align: center;
+  text-align: justify;
   white-space: normal;
   width: 55%;
   font-size: 18px;
@@ -144,7 +144,7 @@
 
 .home-footer {
   width: 100%;
-  height: 23vh;
+  height: 30vh;
   background-color: grey;
   display: flex;
   flex-direction: column;
