@@ -38,7 +38,8 @@ const IntroInfo = () => {
       <div className="ii-text-cont">
         <h2>OUR MISSION</h2>
         <p>
-          To anable students realize their potential through identification & development of individuals talents
+          To anable students realize their potential through identification &
+          development of individuals talents
         </p>
       </div>
     </div>
@@ -70,11 +71,7 @@ const HomeAboutUs = () => {
           source of wealth but at later changed to a Mixed Day and Boarding
           School to date. The school has since then grown in leaps and bounds
           from an initial population of less than 50 students to the current
-          population of 321 as of February 2020 and the numbers are soaring. Key
-          personalities who were very instrumental in the inception of the
-          School included; Retired Senior Chief Rama Leshamta a well polished
-          administrator adorned with several awards and recommendations to
-          match. He is also an astute farmer and a family man.
+          population of 321 as of February 2020 and the numbers are soaring... reamore
         </p>
       </section>
 
@@ -142,5 +139,11 @@ const Home = () => {
 
 export default Home;
 
-
 //https://github.com/ChrisMadeda-Dev/ChalaSec.git
+
+/* 
+Key personalities who were very instrumental in the inception of the
+          School included; Retired Senior Chief Rama Leshamta a well polished
+          administrator adorned with several awards and recommendations to
+          match. He is also an astute farmer and a family man.
+ */
