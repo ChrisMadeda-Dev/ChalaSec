@@ -124,6 +124,32 @@ const OurIdentity = () => {
   );
 };
 
+const ContactUsSec = () => {
+  return (
+    <div className="contact-us-sec">
+      <h2>CONTACT US</h2>
+      <section>
+        <div>
+          <div>
+          <span>EMAIL</span>
+          </div>
+          <div>
+          <span>TELEPHONE</span>
+          </div>
+        </div>
+        <div>
+          <div> 
+          <span>WHATSAPP</span>
+          </div>
+          <div>
+          <span>FACEBOOK</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
 const HomeFooter = () => {
   return (
     <div className="home-footer">
@@ -147,6 +173,7 @@ const Home = () => {
         <WelcomeIntro />
         <HomeAboutUs />
         <OurIdentity />
+        <ContactUsSec/>
         <HomeFooter />
       </header>
     </div>
@@ -156,10 +183,3 @@ const Home = () => {
 export default Home;
 
 //https://github.com/ChrisMadeda-Dev/ChalaSec.git
-
-/* 
-Key personalities who were very instrumental in the inception of the
-          School included; Retired Senior Chief Rama Leshamta a well polished
-          administrator adorned with several awards and recommendations to
-          match. He is also an astute farmer and a family man.
- */
