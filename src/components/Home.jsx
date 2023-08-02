@@ -24,34 +24,22 @@ const Welcome = () => {
   return <main className="welcome-sec"></main>;
 };
 
-const IntroInfo = () => {
+const WelcomeIntro = () => {
   return (
-    <div className="intro-info">
-      <div className="ii-text-cont">
-        <h2>OUR MOTTO</h2>
-        <p>ELIMU NI MWANGAZA</p>
-      </div>
-      <div className="ii-text-cont">
-        <h2>OUR VISION</h2>
-        <p>To convert the school to a center of academic excellence</p>
-      </div>
-      <div className="ii-text-cont">
-        <h2>OUR MISSION</h2>
+    <div className="welcome-intro">
+      <section className="wi-text">
+        <h2>WELCOME</h2>
+        <h2>TO CHALA SECONDARY SCHOOL</h2>
         <p>
-          To anable students realize their potential through identification &
-          development of individuals talents
+          Our Mission is to anable students realize their potential through
+          identification & development of individuals talents
         </p>
+      </section>
+      <div className="wi-images">
+        <img src={img1} />
+        <img src={img2} />
+        <img src={img3} />
       </div>
-    </div>
-  );
-};
-
-const IntroImageSec = () => {
-  return (
-    <div className="intro-image-sec">
-      <img src={img1} />
-      <img src={img2} />
-      <img src={img3} />
     </div>
   );
 };
@@ -71,7 +59,8 @@ const HomeAboutUs = () => {
           source of wealth but at later changed to a Mixed Day and Boarding
           School to date. The school has since then grown in leaps and bounds
           from an initial population of less than 50 students to the current
-          population of 321 as of February 2020 and the numbers are soaring... reamore
+          population of 321 as of February 2020 and the numbers are soaring...
+          reamore
         </p>
       </section>
 
@@ -108,6 +97,33 @@ const HomeAboutUs = () => {
   );
 };
 
+const OurIdentity = () => {
+  return (
+    <div className="our-identity">
+      <section>
+        <img src={img3} />
+      </section>
+      <ul>
+        <div>
+          <h2>MOTTO</h2>
+          <p>Elimu ni Mwangaza</p>
+        </div>
+        <div>
+          <h2>VISION</h2>
+          <p>To convert the school to a center of academic excellence</p>
+        </div>
+        <div>
+          <h2>MISSION</h2>
+          <p>
+            To anable students realize their potential through identification &
+            development of individuals talents
+          </p>
+        </div>
+      </ul>
+    </div>
+  );
+};
+
 const HomeFooter = () => {
   return (
     <div className="home-footer">
@@ -128,9 +144,9 @@ const Home = () => {
       <header>
         <HomeHeader />
         <Welcome />
-        <IntroInfo />
-        <IntroImageSec />
+        <WelcomeIntro />
         <HomeAboutUs />
+        <OurIdentity />
         <HomeFooter />
       </header>
     </div>

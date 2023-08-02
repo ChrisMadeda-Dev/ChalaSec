@@ -1,7 +1,7 @@
 .home-header {
   width: 100%;
   height: 10vh;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,9 @@
 
 .home-header > h2 {
   margin: 0px;
+  font-family: sans-serif;
+  color: "";
+  display: none;
 }
 
 .home-header > ul {
@@ -33,66 +36,62 @@
 
 .welcome-sec {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-color: grey;
   background-image: url("../images/gate.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.intro-info {
+.welcome-intro {
   width: 100%;
-  height: 30vh;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ii-text-cont {
-  flex: 0 0 25%;
-  height: 80%;
-  margin: 0px 5px;
-  background-color: lightgrey;
+  height: 60vh;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.ii-text-cont > p {
-  margin-top: 3px;
+.wi-text {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: "";
+}
+
+.wi-text > h2 {
+  font-weight: bolder;
+}
+
+.wi-text > h2:nth-child(2) {
+  color: "";
+}
+
+.wi-text > p {
+  margin-top: 7px;
   font-size: 15px;
   color: #353839;
-  padding: 0px 20px;
+  text-align: center;
 }
 
-.intro-image-sec {
-  width: 100%;
-  height: 35vh;
-  background-color: white;
+.wi-images {
+  width: 50%;
+  height: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.intro-image-sec > img {
-  object-fit: cover;
-  flex: 0 0 10%;
-  width: 17%;
-  height: 90%;
-  margin: 0px 5px;
-  transition: ease-in-out 0.5s;
-}
-
-.intro-image-sec > img:hover {
-  opacity: 0.9;
-  border: 0.5px solid grey;
-}
-
-.intro-image-cont {
+.wi-images > img {
   flex: 0 0 30%;
-  height: 80%;
+  width: 30%;
+  height: 70%;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 .home-about-us {
@@ -123,7 +122,8 @@
   text-align: justify;
   white-space: normal;
   width: 60%;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 .home-our-detail {
@@ -147,14 +147,55 @@
 
 .home-our-detail > ul > h1 {
   margin: 10px 0px;
-  width: 59%;
-  font-size: 25px;
 }
 
 .home-our-detail > ul > li {
   color: #303030;
-  text-align: justify;
+  text-align: center;
   width: 55%;
+}
+
+.our-identity {
+  width: 100%;
+  height: 80vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-identity > section,
+.our-identity > ul {
+  height: 80%;
+  width: 30%;
+  flex: 0 0 35%;
+  background-color: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-identity > section > img {
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.our-identity > ul > div {
+  flex: 0 0 15%;
+  width: 90%;
+  background-color: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+}
+
+.our-identity>ul>div>p{
+  color: #353839;
 }
 
 .home-footer {
@@ -174,13 +215,14 @@
   justify-content: center;
 }
 
-.home-footer>ul>li{
+.home-footer > ul > li {
   font-size: 14px;
   color: #444444;
+  font-family: sans-serif;
 }
 
-.home-footer>ul>h3{
-  color: #353535;;
+.home-footer > ul > h3 {
+  color: #353535;
 }
 
 @media (max-width: 600px) {
@@ -195,46 +237,38 @@
     height: 70vh;
   }
 
-  .intro-info {
-    flex-direction: column;
-    height: 50vh;
-    background-color: "";
+  .welcome-intro{
+    background-color: whitesmoke;
+    height: 55vh;
   }
 
-  .ii-text-cont {
-    width: 90%;
-    flex: 0 0 20%;
-    margin: 10px 0px;
-    background-color: white;
-    justify-content: center;
-  }
-
-  .ii-text-cont > h2 {
-    font-size: 16px;
-  }
-
-  .ii-text-cont > p {
+  .wi-text{
     padding: 0px 20px;
-    text-align: center;
+  }
+
+  .wi-text>h2{
+    font-size: 18px;
+  }
+
+  .wi-text>p{
+    padding: 0px 20px;
     font-size: 15px;
-    color: #303030;
   }
 
-  .intro-image-sec {
-    height: 70vh;
-    flex-direction: column;
+  .wi-images{
+    width: 100%;
+    flex: 0 0 50%;
   }
 
-  .intro-image-sec > img {
-    width: 90%;
-    height: 32%;
-    flex: 0 0 5%;
-    margin: 5px 0px;
-    border-radius: 10px;
+  .wi-images>img{
+   width: 10%;
+   flex: 0 0 27%;
+   height: 60%;
+   object-fit: cover;
   }
 
   .home-about-us {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: "";
   }
@@ -274,5 +308,42 @@
   .home-our-detail > ul > li {
     font-size: 15px;
     color: #303030;
+  }
+
+  .our-identity {
+    height: 70vh;
+    flex-direction: column;
+    background-color: whitesmoke;
+  }
+
+  .our-identity > section {
+    flex: 0 0 50%;
+    width: 100%;
+  }
+
+  .our-identity>section>img{
+    width: 80%;
+  }
+
+  .our-identity > ul {
+    flex: 0 0 50%;
+    width: 100%;
+  }
+
+  .our-identity > ul > div {
+    flex: 0 0 27%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-identity > ul > div > h2 {
+    font-size: 20px;
+  }
+
+  .our-identity > ul > div > p {
+    font-size: 15px;
+    padding: 0px;
+    margin-top: 5px;
+    text-align: center;
   }
 }
