@@ -9,8 +9,9 @@
 
 .home-header > h2 {
   margin: 0px;
-  font-family: sans-serif;
+  font-family: serif;
   color: "";
+  font-weight: bold;
 }
 
 .home-header > ul {
@@ -31,6 +32,47 @@
 
 .home-header > ul > li:hover {
   color: grey;
+}
+
+.home-header > span {
+  display: none;
+}
+
+.nav-sec {
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-sec > ul {
+  width: 100%;
+  flex: 0 0 60%;
+  background-color: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-sec > ul > li {
+  width: 60%;
+  height: 40px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+
+.nav-sec > ul > li:hover {
+  opacity: 0.9;
 }
 
 .welcome-sec {
@@ -268,15 +310,23 @@
 }
 
 @media (max-width: 600px) {
+  .home-header{
+    justify-content: space-evenly;
+    padding: 0px 10px;
+  }
   .home-header > h2 {
-    font-size: 18px;
+    font-size: 19px;
   }
   .home-header > ul {
     display: none;
   }
 
+  .home-header > span {
+  display: flex;
+}
+
   .welcome-sec {
-    height: 70vh;
+    height: 90vh;
   }
 
   .welcome-intro {

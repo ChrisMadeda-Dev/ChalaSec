@@ -5,8 +5,26 @@ import img2 from "../images/02.jpg";
 import img3 from "../images/03.jpg";
 import img4 from "../images/04.jpg";
 import img5 from "../images/05.jpg";
+import { useState } from "react";
+
+import { AiOutlineMenu } from "react-icons/ai";
+
+const NavSec = ({ tglNavSec }) => {
+  return (
+    <div className="nav-sec">
+      <span onClick={(e) => tglNavSec()}>close</span>
+      <ul>
+        <li>Departments</li>
+        <li>Faciliies</li>
+        <li>Management</li>
+        <li>Gallery</li>
+      </ul>
+    </div>
+  );
+};
 
 const HomeHeader = () => {
+  const [tglNavSec, setTglNavSec] = useState(false);
   return (
     <header className="home-header">
       <h2>CHALA SECONDARY</h2>
@@ -16,6 +34,10 @@ const HomeHeader = () => {
         <li>Management</li>
         <li>Gallery</li>
       </ul>
+      <span onClick={(e) => setTglNavSec(!tglNavSec)}>
+        <AiOutlineMenu />
+      </span>
+      {tglNavSec && <NavSec tglNavSec={(e) => setTglNavSec(!tglNavSec)} />}
     </header>
   );
 };
@@ -131,18 +153,18 @@ const ContactUsSec = () => {
       <section>
         <div>
           <div>
-          <span>EMAIL</span>
+            <span>EMAIL</span>
           </div>
           <div>
-          <span>TELEPHONE</span>
+            <span>TELEPHONE</span>
           </div>
         </div>
         <div>
-          <div> 
-          <span>WHATSAPP</span>
+          <div>
+            <span>WHATSAPP</span>
           </div>
           <div>
-          <span>FACEBOOK</span>
+            <span>FACEBOOK</span>
           </div>
         </div>
       </section>
@@ -173,7 +195,7 @@ const Home = () => {
         <WelcomeIntro />
         <HomeAboutUs />
         <OurIdentity />
-        <ContactUsSec/>
+        <ContactUsSec />
         <HomeFooter />
       </header>
     </div>
