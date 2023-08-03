@@ -11,7 +11,6 @@
   margin: 0px;
   font-family: sans-serif;
   color: "";
-  display: none;
 }
 
 .home-header > ul {
@@ -282,7 +281,7 @@
 
   .welcome-intro {
     background-color: whitesmoke;
-    height: 70vh;
+    height: 60vh;
   }
 
   .wi-text {
@@ -306,8 +305,8 @@
 
   .wi-images > img {
     width: 10%;
-    flex: 0 0 27%;
-    height: 60%;
+    flex: 0 0 28%;
+    height: 70%;
     object-fit: cover;
   }
 
@@ -323,7 +322,7 @@
   }
 
   .home-about-us-text > h1 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .home-about-us-text > p {
@@ -347,6 +346,11 @@
     flex: 0 0 100%;
     width: 95%;
     background-color: "";
+  }
+
+  .home-our-detail > ul > h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .home-our-detail > ul > li {
@@ -377,7 +381,7 @@
   }
 
   .our-identity > ul > div {
-    flex: 0 0 25%;
+    flex: 0 0 27%;
     justify-content: center;
     align-items: center;
   }
@@ -417,7 +421,7 @@
     margin: 0px 3px;
     background-color: whitesmoke;
   }
-  .contact-us-sec> section>div>div>span{
+  .contact-us-sec > section > div > div > span {
     font-size: 15px;
   }
 }
