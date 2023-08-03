@@ -65,7 +65,7 @@
 .nav-sec > ul > li {
   width: 60%;
   height: 40px;
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
   font-weight: 600;
   transition: ease-in-out 0.5s;
@@ -326,7 +326,7 @@
 }
 
   .welcome-sec {
-    height: 90vh;
+    height: 75vh;
   }
 
   .welcome-intro {
