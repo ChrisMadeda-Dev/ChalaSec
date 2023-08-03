@@ -64,15 +64,21 @@
 
 .nav-sec > ul > li {
   width: 60%;
-  height: 40px;
+  height: 60px;
+  margin: 5px 0px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-sec > ul > li:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .welcome-sec {

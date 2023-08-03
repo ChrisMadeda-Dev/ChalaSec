@@ -7,12 +7,14 @@ import img4 from "../images/04.jpg";
 import img5 from "../images/05.jpg";
 import { useState } from "react";
 
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const NavSec = ({ tglNavSec }) => {
   return (
     <div className="nav-sec">
-      <span onClick={(e) => tglNavSec()}>close</span>
+      <span onClick={(e) => tglNavSec()}>
+       CLOSE
+      </span>
       <ul>
         <li>Departments</li>
         <li>Faciliies</li>
@@ -204,4 +206,4 @@ const Home = () => {
 
 export default Home;
 
-//https://github.com/ChrisMadeda-Dev/ChalaSec.git
+//~
