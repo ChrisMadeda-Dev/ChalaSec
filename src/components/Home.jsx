@@ -6,18 +6,26 @@ import img3 from "../images/03.jpg";
 import img4 from "../images/04.jpg";
 import img5 from "../images/05.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const NavSec = ({ tglNavSec }) => {
+  const linkStyle = { textDecoration: "none", color: "#1b1b1b" };
   return (
     <div className="nav-sec">
-      <span onClick={(e) => tglNavSec()}>
-       CLOSE
-      </span>
+      <span onClick={(e) => tglNavSec()}>CLOSE</span>
       <ul>
-        <li>Departments</li>
-        <li>Faciliies</li>
+        <li>
+          <Link style={linkStyle} to="depfac">
+            Departments
+          </Link>
+        </li>
+        <li>
+          <Link style={linkStyle} to="depfac">
+            Facilities
+          </Link>
+        </li>
         <li>Management</li>
         <li>Gallery</li>
       </ul>
@@ -27,12 +35,21 @@ const NavSec = ({ tglNavSec }) => {
 
 const HomeHeader = () => {
   const [tglNavSec, setTglNavSec] = useState(false);
+  const linkStyle = { textDecoration: "none", color: "#1b1b1b" };
   return (
     <header className="home-header">
       <h2>CHALA SECONDARY</h2>
       <ul>
-        <li>Departments</li>
-        <li>Faciliies</li>
+        <li>
+          <Link style={linkStyle} to="depfac">
+            Departments
+          </Link>
+        </li>
+        <li>
+          <Link style={linkStyle} to="/depfac">
+            Facilities
+          </Link>
+        </li>
         <li>Management</li>
         <li>Gallery</li>
       </ul>
@@ -206,4 +223,4 @@ const Home = () => {
 
 export default Home;
 
-//~
+//https://github.com/ChrisMadeda-Dev/ChalaSec.git

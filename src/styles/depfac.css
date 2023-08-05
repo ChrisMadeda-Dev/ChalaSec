@@ -1,0 +1,74 @@
+.dep-fac-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dep-fac-page > header {
+  width: 100%;
+  height: 15vh;
+  background-color: grey;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dep-fac-page > main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.dep-fac-page > main > ul {
+  list-style-type: disc;
+  background-color: whitesmoke;
+  height: 60%;
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dep-fac-page > main > ul > h3 {
+  width: 50%;
+  text-align: justify;
+  margin: 10px 0px;
+}
+.dep-fac-page > main > ul > li {
+  width: 50%;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .dep-fac-page > header > h3 {
+    font-size: 17px;
+  }
+
+  .dep-fac-page > main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dep-fac-page > main > ul {
+    flex: 40%;
+    width: 95%;
+  }
+  .dep-fac-page > main > ul > h3 {
+    width: 80%;
+    text-align: justify;
+    margin: 10px 0px;
+  }
+  .dep-fac-page > main > ul > li {
+    width: 80%;
+    text-align: justify;
+  }
+}
