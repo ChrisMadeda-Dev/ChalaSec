@@ -45,7 +45,7 @@
 }
 .dep-fac-page > main > ul > li {
   width: 50%;
-  text-align: justify;
+  text-align: left;
 }
 
 @media (max-width: 600px) {

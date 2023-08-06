@@ -17,6 +17,11 @@ const NavSec = ({ tglNavSec }) => {
       <span onClick={(e) => tglNavSec()}>CLOSE</span>
       <ul>
         <li>
+          <Link style={linkStyle} to="history">
+            History
+          </Link>
+        </li>
+        <li>
           <Link style={linkStyle} to="depfac">
             Departments
           </Link>
@@ -40,6 +45,11 @@ const HomeHeader = () => {
     <header className="home-header">
       <h2>CHALA SECONDARY</h2>
       <ul>
+        <li>
+          <Link style={linkStyle} to="history">
+            History
+          </Link>
+        </li>
         <li>
           <Link style={linkStyle} to="depfac">
             Departments
@@ -101,7 +111,9 @@ const HomeAboutUs = () => {
           School to date. The school has since then grown in leaps and bounds
           from an initial population of less than 50 students to the current
           population of 321 as of February 2020 and the numbers are soaring...
-          reamore
+          <Link style={{ color: "#353839" }} to="history">
+            readmore
+          </Link>
         </p>
       </section>
 
@@ -172,15 +184,17 @@ const ContactUsSec = () => {
       <section>
         <div>
           <div>
-            <span>EMAIL</span>
+            <a href="mailto:chalasecondaryschool@gmail.com">EMAIL</a>
           </div>
           <div>
-            <span>TELEPHONE</span>
+            <a href="tel:+254708733750">TELEPHONE</a>
           </div>
         </div>
         <div>
           <div>
-            <span>WHATSAPP</span>
+            <a href="https://api.whatsapp.com/send?phone=+254708733750">
+              WHATSAPP
+            </a>
           </div>
           <div>
             <span>FACEBOOK</span>

@@ -34,6 +34,7 @@
     color: #353839;
     font-family: sans-serif;
     text-align: justify;
+    padding: 0px 10px;
 }
 
 .history-page>main>ul{
@@ -44,6 +45,8 @@
 
 @media (max-width:600px) {
     .history-page>main{
-        width: 100%;
+        width: 93%;
     }
+
+  
 }
