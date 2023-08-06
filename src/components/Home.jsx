@@ -17,8 +17,8 @@ const NavSec = ({ tglNavSec }) => {
       <span onClick={(e) => tglNavSec()}>CLOSE</span>
       <ul>
         <li>
-          <Link style={linkStyle} to="history">
-            History
+          <Link style={linkStyle} to="/management">
+            Management
           </Link>
         </li>
         <li>
@@ -31,8 +31,11 @@ const NavSec = ({ tglNavSec }) => {
             Facilities
           </Link>
         </li>
-        <li>Management</li>
-        <li>Gallery</li>
+        <li>
+          <Link style={linkStyle} to="history">
+            History
+          </Link>
+        </li>
       </ul>
     </div>
   );
@@ -46,10 +49,11 @@ const HomeHeader = () => {
       <h2>CHALA SECONDARY</h2>
       <ul>
         <li>
-          <Link style={linkStyle} to="history">
-            History
+          <Link style={linkStyle} to="/management">
+            Management
           </Link>
         </li>
+
         <li>
           <Link style={linkStyle} to="depfac">
             Departments
@@ -60,8 +64,12 @@ const HomeHeader = () => {
             Facilities
           </Link>
         </li>
-        <li>Management</li>
-        <li>Gallery</li>
+        <li>
+          <Link style={linkStyle} to="history">
+            History
+          </Link>
+        </li>
+
       </ul>
       <span onClick={(e) => setTglNavSec(!tglNavSec)}>
         <AiOutlineMenu />

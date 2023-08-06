@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/Home";
 import History from "./components/History";
 import DepFac from "./components/DepFac";
+import Management from "./components/Management";
 
 import {
   createBrowserRouter,
@@ -17,8 +18,9 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
-        <Route path='/history' element={<History/>} />
-        <Route path="/depfac" element={<DepFac/>} />
+        <Route path="/history" element={<History />} />
+        <Route path="/depfac" element={<DepFac />} />
+        <Route path="/management" element={<Management />} />
       </Route>
     )
   );
